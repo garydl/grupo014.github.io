@@ -22,16 +22,18 @@
         <nav>
             <ul>
                 <li><a href="/">Inicio</a></li>
-                <li><a href="/about">Integrantes</a></li>
+                <li><a href="/members">Integrantes</a></li>
                 <li><a href="/project">Avances</a></li>
              </ul>
         </nav>
       </header>
-
+      <div class="container">
+			{{ content }}
+			</div>
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
+        <a href="{{ site.github.repository_url }}" class="button fork"><strong>Ver en GitHub</strong></a>
         {% if site.show_downloads %}
           <div class="downloads">
             <span>Downloads:</span>
@@ -55,7 +57,10 @@
         {% if site.github.is_project_page %}
           <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <ul>
+	        		<li><a href="mailto:VIAGE014@gmail.com">email</a></li>
+              <li><p><small>Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p></li>
+				</ul>
       </footer>
     </div>
 
